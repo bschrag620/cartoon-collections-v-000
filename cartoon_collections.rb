@@ -17,7 +17,12 @@ end
 
 def long_planeteer_calls(calls)# code an argument here
   # Your code here
-  calls.include?(calls.each do |call| call.length > 4)
+  calls.each do | call |
+    if call.length > 4
+      return true
+    end
+  end
+  return false
 end
 
 def find_the_cheese(snacks)# code an argument here
